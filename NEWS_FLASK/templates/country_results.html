@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Country Result</title>
+</head>
+<body>
+<form method="POST" action="{{url_for('country')}}">
+    <label >Choose a {{form.country.label}}:</label>
+        {{form.country}}
+    <br>
+    <input type="submit" value="Search">
+    </form>
+
+    <h1><strong><a href="{{country_info.0.url}}">{{country_info.0.title}}</a></strong></h1>
+          <p><strong>By {{ country_info.0.author }}<br>Source {{ country_info.0.source.name }}</strong></p>
+
+          <img src="{{ country_info.0.urlToImage }}"><br>
+
+<h1><strong><a href="{{country_info.1.url}}">{{country_info.1.title}}</a></strong></h1>
+          <p><strong>By {{ country_info.1.author }}<br>Source {{ country_info.1.source.name }}</strong></p>
+
+          <img src="{{ country_info.1.urlToImage }}"><br>
+
+<h1><strong><a href="{{country_info.2.url}}">{{country_info.2.title}}</a></strong></h1>
+          <p><strong>By {{ country_info.2.author }}<br>Source {{ country_info.2.source.name }}</strong></p>
+
+          <img src="{{ country_info.2.urlToImage }}"><br>
+
+<h1><strong><a href="{{country_info.3.url}}">{{country_info.3.title}}</a></strong></h1>
+          <p><strong>By {{ country_info.3.author }}<br>Source {{ country_info.3.source.name }}</strong></p>
+
+          <img src="{{ country_info.3.urlToImage }}"><br>
+
+<h1><strong><a href="{{country_info.4.url}}">{{country_info.4.title}}</a></strong></h1>
+          <p><strong>By {{ country_info.4.author }}<br>Source {{ country_info.4.source.name }}</strong></p>
+
+          <img src="{{ country_info.4.urlToImage }}"><br>
+
+<h1><strong><a href="{{country_info.5.url}}">{{country_info.5.title}}</a></strong></h1>
+          <p><strong>By {{ country_info.5.author }}<br>Source {{ country_info.5.source.name }}</strong></p>
+
+          <img src="{{ country_info.5.urlToImage }}"><br>
+
+<h1><strong><a href="{{country_info.6.url}}">{{country_info.6.title}}</a></strong></h1>
+          <p><strong>By {{ country_info.6.author }} <br>Source {{ country_info.6.source.name }}</strong></p>
+
+          <img src="{{ country_info.6.urlToImage }}"><br>
+
+<h1><strong><a href="{{country_info.7.url}}">{{country_info.7.title}}</a></strong></h1>
+          <p><strong>By {{ country_info.7.author }} <br>Source {{ country_info.7.source.name }}</strong></p>
+
+          <img src="{{ country_info.7.urlToImage }}"><br>
+
+<h1><strong><a href="{{country_info.8.url}}">{{country_info.8.title}}</a></strong></h1>
+          <p><strong>By {{ country_info.8.author }}<br>Source {{ country_info.8.source.name }}</strong></p>
+
+          <img src="{{ country_info.8.urlToImage }}"><br>
+
+<h1><strong><a href="{{country_info.9.url}}">{{country_info.9.title}}</a></strong></h1>
+          <p><strong>By {{ country_info.9.author }} <br>Source {{ country_info.9.source.name }}</strong></p>
+
+          <img src="{{ country_info.9.urlToImage }}"><br>
+
+
+
+{{ country_info.0.title }}
+</body>
+</html>
